@@ -1,6 +1,10 @@
 {
-  "provision": {
-    "default": {
+  "bios_config": [
+    {
+      "pattern": {
+        "plan": ".*",
+        "os": ".*"
+      },
       "settings": {
         "SecureBootEnable": false,
         "IntelVirtualizationTechnology": "Enabled",
@@ -8,61 +12,41 @@
         "IPv4PXESupport": "Enabled"
       }
     },
-    "by_plan": [
-      {
-        "plan_pattern": "ms5\\..*",
-        "settings": {
-          "TurboMode": "Enabled"
-        }
-      }
-    ],
-    "by_os": [
-      {
-        "os_pattern": "ubuntu.*",
-        "settings": {
-          "NetworkStack": "Enabled",
-          "IPv4PXESupport": "Enabled"
-        }
+    {
+      "pattern": {
+        "plan": "ms5\\..*"
       },
-      {
-        "os_pattern": "windows.*",
-        "settings": {
-          "NetworkStack": "Enabled"
-        }
-      }
-    ],
-    "by_plan_and_os": [
-      {
-        "plan_pattern": "ms5\\..*",
-        "os_pattern": "ubuntu.*",
-        "settings": {
-          "TurboMode": "Enabled",
-          "PowerPerformanceTuning": "Performance"
-        }
-      }
-    ]
-  },
-  "post_provision": {
-    "default": {
       "settings": {
-        "SecureBootEnable": true
+        "TurboMode": "Enabled"
       }
     },
-    "by_os": [
-      {
-        "os_pattern": "ubuntu.*",
-        "settings": {
-          "SecureBootEnable": true,
-          "SecureBootMode": "Standard"
-        }
+    {
+      "pattern": {
+        "os": "ubuntu.*"
       },
-      {
-        "os_pattern": "windows.*",
-        "settings": {
-          "SecureBootEnable": true,
-          "SecureBootMode": "Standard"
-        }
+      "settings": {
+        "NetworkStack": "Enabled",
+        "IPv4PXESupport": "Enabled"
       }
-    ]
-  }
+    },
+    {
+      "pattern": {
+        "plan": "ms5\\..*",
+        "os": "ubuntu.*"
+      },
+      "settings": {
+        "TurboMode": "Enabled",
+        "PowerPerformanceTuning": "Performance"
+      }
+    }
+  ],
+  "post_bios_config": [
+    {
+      "pattern": { "os": ".*" },
+      "settings": {
+        "SecureBootEnable": true,
+        "SecureBootMode": "Standard"
+      }
+    }
+  ]
 }
