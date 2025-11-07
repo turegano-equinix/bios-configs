@@ -1,0 +1,68 @@
+{
+  "provision": {
+    "default": {
+      "settings": {
+        "SecureBootEnable": false,
+        "IntelVirtualizationTechnology": "Enabled",
+        "NetworkStack": "Enabled",
+        "IPv4PXESupport": "Enabled"
+      }
+    },
+    "by_plan": [
+      {
+        "plan_pattern": "ms5\\..*",
+        "settings": {
+          "TurboMode": "Enabled"
+        }
+      }
+    ],
+    "by_os": [
+      {
+        "os_pattern": "ubuntu.*",
+        "settings": {
+          "NetworkStack": "Enabled",
+          "IPv4PXESupport": "Enabled"
+        }
+      },
+      {
+        "os_pattern": "windows.*",
+        "settings": {
+          "NetworkStack": "Enabled"
+        }
+      }
+    ],
+    "by_plan_and_os": [
+      {
+        "plan_pattern": "ms5\\..*",
+        "os_pattern": "ubuntu.*",
+        "settings": {
+          "TurboMode": "Enabled",
+          "PowerPerformanceTuning": "Performance"
+        }
+      }
+    ]
+  },
+  "post_provision": {
+    "default": {
+      "settings": {
+        "SecureBootEnable": true
+      }
+    },
+    "by_os": [
+      {
+        "os_pattern": "ubuntu.*",
+        "settings": {
+          "SecureBootEnable": true,
+          "SecureBootMode": "Standard"
+        }
+      },
+      {
+        "os_pattern": "windows.*",
+        "settings": {
+          "SecureBootEnable": true,
+          "SecureBootMode": "Standard"
+        }
+      }
+    ]
+  }
+}
