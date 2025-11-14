@@ -14,10 +14,10 @@
     },
     {
       "pattern": {
-        "plan": "ms5\\..*"
+        "plan": "c3\\..*"
       },
       "settings": {
-        "TurboMode": "Enabled"
+        "c3": "Enabled"
       }
     },
     {
