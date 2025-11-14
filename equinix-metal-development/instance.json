@@ -4,7 +4,8 @@
       "settings": {
         "TurboMode": "Enabled",
         "PowerPerformanceTuning": "Performance",
-        "Instance": "True"
+        "Instance": "True",
+        "Test": "A"
       }
     }
   ]
