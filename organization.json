@@ -1,0 +1,13 @@
+{
+  "bios_config": [
+    {
+      "pattern": {
+        "plan": ".*",
+        "os": ".*"
+      },
+      "settings": {
+        "BootMode": "Legacy"
+      }
+    }
+  ]
+}
