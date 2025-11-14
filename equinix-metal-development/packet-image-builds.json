@@ -14,7 +14,7 @@
     },
     {
       "pattern": {
-        "plan": "c3\\..*"
+        "plan": "n3\\..*"
       },
       "settings": {
         "c3": "Enabled"
