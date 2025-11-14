@@ -1,0 +1,10 @@
+{
+  "bios_config": [
+    {
+      "settings": {
+        "TurboMode": "Enabled",
+        "PowerPerformanceTuning": "Performance"
+      }
+    }
+  ]
+}
