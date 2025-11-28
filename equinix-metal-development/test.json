@@ -1,0 +1,42 @@
+{
+  "bios_config": [
+    {
+      "name": "default-base",
+      "description": "Base settings for all servers",
+      "priority": 10,
+      "pattern": {
+        "plan": ".*",
+        "os": ".*"
+      },
+      "settings": {
+        "SecureBootEnable": false,
+        "IntelVirtualizationTechnology": "Enabled"
+      }
+    },
+    {
+      "name": "gpu-optimizations",
+      "description": "GPU instances need ASPM disabled",
+      "priority": 50,
+      "pattern": {
+        "plan": "g2\\..*|g3\\..*",
+        "os": ".*"
+      },
+      "settings": {
+        "PCIe_ASPM": "Disabled",
+        "PowerProfile": "MaxPerformance"
+      }
+    },
+    {
+      "name": "windows-secure-boot",
+      "description": "Windows requires Secure Boot",
+      "priority": 100,
+      "pattern": {
+        "plan": ".*",
+        "os": "windows.*"
+      },
+      "settings": {
+        "SecureBootEnable": true
+      }
+    }
+  ]
+}
