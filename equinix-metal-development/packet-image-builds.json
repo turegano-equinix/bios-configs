@@ -10,7 +10,7 @@
         "IntelVirtualizationTechnology": "Enabled",
         "NetworkStack": "Enabled",
         "IPv4PXESupport": "Enabled",
-        "raw:Advanced,CPU Configuration,Hyper-Threading": "Enabled",
+        "raw:Advanced,CPU Configuration,Hyper-Threading": "Enabled"
       }
     },
     {
