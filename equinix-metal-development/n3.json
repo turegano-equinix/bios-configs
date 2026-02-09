@@ -1,0 +1,21 @@
+  {
+    "bios_config": [
+      {
+        "pattern": {"plan": "n3\\..*"},
+        "settings": {
+          "boot_mode": "UEFI",
+          "smt": "Enabled",
+          "raw:Boot,Boot mode select": "UEFI",
+          "raw:Advanced,CPU Configuration,Hyper-Threading": "Enabled"
+        }
+      }
+    ],
+    "post_bios_config": [
+      {
+        "pattern": {"plan": "n3\\..*"},
+        "settings": {
+          "raw:Advanced,Boot Feature,Fast Boot": "Disabled"
+        }
+      }
+    ]
+  }
