@@ -6,6 +6,7 @@
           "boot_mode": "UEFI",
           "smt": "Enabled",
           "raw:Boot,Boot mode select": "UEFI",
+          "raw:Advanced,Boot Feature,Fast Boot": "Enabled"
           "raw:Advanced,CPU Configuration,Hyper-Threading": "Enabled"
         }
       }
