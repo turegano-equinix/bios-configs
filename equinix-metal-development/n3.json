@@ -7,7 +7,7 @@
           "smt": "Enabled",
           "raw:Boot,Boot mode select": "UEFI",
           "raw:Advanced,Boot Feature,Fast Boot": "Enabled",
-          "raw:Advanced,Boot Feature,Quiet Boot": "Unchecked",
+          "raw:Advanced,Boot Feature,Quiet Boot": "Checked",
           "raw:Advanced,CPU Configuration,Hyper-Threading": "Enabled"
         }
       }
