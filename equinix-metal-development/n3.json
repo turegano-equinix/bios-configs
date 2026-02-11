@@ -1,7 +1,7 @@
   {
     "bios_config": [
       {
-        "pattern": {"plan": "n3\\..*"},
+        "pattern": {"plan": "m3\\..*"},
         "settings": {
           "boot_mode": "UEFI",
           "smt": "Enabled",
@@ -14,7 +14,7 @@
     ],
     "post_bios_config": [
       {
-        "pattern": {"plan": "n3\\..*"},
+        "pattern": {"plan": "m3\\..*"},
         "settings": {
           "raw:Advanced,Boot Feature,Fast Boot": "Disabled"
         }
