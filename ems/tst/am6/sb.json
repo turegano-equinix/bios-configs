@@ -24,8 +24,8 @@
         "os": "vmware_esx.*"
       },
       "settings": {
-        "SecureBootEnable": "Checked",
-        "Secure Boot Mode": "Standard"
+        "raw:Security,SupermicroSBForm,SecureBootEnable": "Checked",
+        "raw:Security,SupermicroSBForm,Secure Boot Mode": "Standard"
       }
     }
   ]
