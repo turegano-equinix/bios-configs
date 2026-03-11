@@ -24,8 +24,8 @@
         "os": "vmware_esx.*"
       },
       "settings": {
-        "SecureBootEnable": "true",
-        "SecureBootMode": "Standard"
+        "SecureBootEnable": "Checked",
+        "Secure Boot Mode": "Standard"
       }
     }
   ]
