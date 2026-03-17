@@ -1,0 +1,32 @@
+{
+    "bios_config": [
+      {
+        "pattern": {
+          "plan": "ms5\\..*",
+          "os": "vmware_esx.*"
+        },
+        "settings": {
+          "BootModeSelect": "UEFI",
+          "IntelVirtualizationTechnology": "Enabled",
+          "SHA256PCRBank": "Enabled",
+          "NVMeModeSwitch": "Manual",
+          "P0_PE1IntelVMDTechnology": "Enabled",
+          "P0_PE1_1IntelVMDTechnology": "Enabled",
+          "P0_PE1_2IntelVMDTechnology": "Enabled",
+          "PowerPerformanceTuning": "OS Controls EPB"
+        }
+      }
+    ],
+    "post_bios_config": [
+      {
+        "pattern": {
+          "plan": "ms5\\..*",
+          "os": "vmware_esx.*"
+        },
+        "settings": {
+          "SecureBootEnable": "true",
+          "SecureBootMode": "Standard"
+        }
+      }
+    ]
+  }
