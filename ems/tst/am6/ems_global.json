@@ -19,7 +19,7 @@
         },
         "settings": {
           "IntelVirtualizationTechnology": "Enabled",
-          "NVMeModeSwitch": "Manual",
+          "NVMeModeSwitch": "0",
           "P0_PE1IntelVMDTechnology": "Enabled",
           "P0_PE1_1IntelVMDTechnology": "Enabled",
           "P0_PE1_2IntelVMDTechnology": "Enabled"
